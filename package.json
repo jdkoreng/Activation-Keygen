@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "heroku-postbuild": "cd client && npm i && npm run build",
+    "start": "node ./bin/www",
+    "dev": "concurrently \"node ./bin/www\" \"cd client && npm start\""
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
@@ -14,5 +16,8 @@
     "jade": "~1.11.0",
     "mongodb": "^3.1.1",
     "morgan": "~1.9.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.6.0"
   }
 }
