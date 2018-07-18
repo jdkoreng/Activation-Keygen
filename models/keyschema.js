@@ -12,7 +12,7 @@ var UserSchema = new Schema({
     unique: true
   },
   alreadyUsed: {
-    type: Boolean,
+    type: Boolean
   },
   email: {
     type: String

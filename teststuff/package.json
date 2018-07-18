@@ -1,0 +1,15 @@
+{
+  "name": "teststuff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "emailstuff.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "emailjs": "^2.2.0",
+    "nodemailer": "^4.6.7"
+  }
+}
