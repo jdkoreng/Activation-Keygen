@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import './App.css';
+import ActivationFormComponent from './components/ActivationFormComponent';
 
 class App extends Component {
   render() {
@@ -13,18 +14,10 @@ class App extends Component {
 
 <div className="row">
     <div className ="col-md-12 mid-col text-center">
-            <h1 id="search-bikes">Get Started With NeXT Live 365!</h1>
-        </div>  
+        <h1 id="search-bikes">Get Started With NeXT Live 365!</h1>
+    </div>
         
-        
-<div className ="col-md-12 mid-col text-center">
-            <form>
-              <input type="text" id="bike-search" placeholder="Activation Code"></input>
-              <input type="text" id="bike-search" placeholder="Email Address"></input>
-              <input type="text" id="bike-search" placeholder="Name"></input>
-              <input for="location-search" id="search" type="submit"></input>
-            </form>  
-        </div>
+    <ActivationFormComponent />
 
         <div className="row">
                 <div className="col-md-3 col-sm-12">
