@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 class ActivationFormComponent extends Component {
     constructor(props) {
@@ -35,6 +36,14 @@ class ActivationFormComponent extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
+        // Do a post request to the route with params.
+        axios.post('http://localhost:3001/activate', this.state)
+          .then(function (response) {
+            console.log(response);
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
     }
 
     render() {

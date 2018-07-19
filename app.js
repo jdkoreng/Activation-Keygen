@@ -18,12 +18,12 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'client/build')));
 
-app.use('/api', activationRouter);
+app.use('/activate', activationRouter);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  res.sendFile(path.join(__dirname, 'client/build/index.html'))
-});
+// app.use(function(req, res, next) {
+//   res.sendFile(path.join(__dirname, 'client/build/index.html'))
+// });
 
 // error handler
 app.use(function(err, req, res, next) {
