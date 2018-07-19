@@ -35,8 +35,10 @@ router.post('/', (req, res, next) => {
         find({"key" : req.body.activationCode}).toArray(function(err, results) {
             codes = results;
             if (codes.length === 0) {
+                // This is invalid
                 res.status(400).send('That was not a valid activation key!');
             } else {
+                // This is valid, update DB with info if it's not already activated.
                 res.status(200).send('That was a good activation key!');
             }
         });
