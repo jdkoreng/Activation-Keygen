@@ -35,11 +35,11 @@ class App extends Component {
                         <br> 
                         </br>
                         <span>Demand for trained and certified technical professionals is growing, and the rise of digital is transforming the way we learn. </span>
-                        <span style="font-size: 10pt;">To stay competitive in a global, fast-paced job market, it’s imperative to stay up-to-date on emerging technologies and ensure your skills are relevant. </span>
+                        <span style={{'font-size': '10px'}}>To stay competitive in a global, fast-paced job market, it’s imperative to stay up-to-date on emerging technologies and ensure your skills are relevant. </span>
                          
                         <br> 
                         </br>
-                        <p style="text-align: justify;"><span style="font-size: 10pt;"><strong>neXT LIVE 365</strong> is available to help you maintain your skills and gain knowledge with quick, easy access to training on the entire portfolio of SLI products and technologies.</span></p>
+                        <p style={{'text-align': 'justify'}}><span style={{'font-size': '10px'}}><strong>neXT LIVE 365</strong> is available to help you maintain your skills and gain knowledge with quick, easy access to training on the entire portfolio of SLI products and technologies.</span></p>
 
                     </p>
                 </div>
